@@ -1,0 +1,26 @@
+Dependancies: 	Notepad++, Pythonscript -> script
+		(2 of 3)Python -> pip -> chardet
+
+---
+
+1: Installeer: Notepad++ met "pythonscript" plugin
+
+2: Installeer pip en chardet (pythonlibraries)
+	-> Kijken of python + libraries correct zijn geinstalleerd
+	-> kijken of de path variabelen kloppen (open cmd, typ: `python/python3/py/pip -V` )
+
+3: Installeer script (installatie)
+	-> kopieer startup script naar -> startuplocatie voor script 
+		(Notepad++/pythonscript heeft een specifieke map voor alle scripts)
+	-> cmd start notepad++ -r file1 file2 (-systemtray)
+
+4: Testen of het script werkt zoals bedoelt.
+	-> Testen of het script lokaal werkt. Met test .csv bestanden die speciale karakters bevatten.
+	-> Verander script testlocatie (waar de .csv bestanden in batch naartoe worden verplaats) naar de 		uiteindelijke-locatie.
+		
+5. Maak een task in task-scheduler. (import task(xml), enable task).
+	-> kijken of het problemen oplevert als de taak runt. of de taak goed afsluit.
+	(moet alleen nog uitzoeken of het notepad++ met een argument gerunt kan worden)
+
+---
+//Mooier zou zijn, een C# script (of beter pythonscript), die direct het bestand converteerd van ? naar Ansi.
